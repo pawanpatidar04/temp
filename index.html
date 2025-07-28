@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .full {
+        background-image: url("https://t3.ftcdn.net/jpg/06/01/17/18/360_F_601171827_GwbDHEuhisbGFXRfIpXFhtf7wAvsbLut.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .full h1 {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 3px;
+
+  /* Add shadow for glow effect */
+  text-shadow: 
+    0 0 5px #ffffff,
+    0 0 10px rgb(255, 255, 255),
+    0 0 20px rgb(255, 255, 255),
+    0 0 30px rgb(255, 255, 255),
+    0 0 40px rgb(255, 255, 255);
+
+  /* Gradient text (needs background-clip) */
+  background: linear-gradient(45deg, #00f2fe, #4facfe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Optional animation */
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #00f2fe, 0 0 10px #00f2fe;
+  }
+  to {
+    text-shadow: 0 0 10px #4facfe, 0 0 20px #4facfe;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <div class="full">
+      <h1>Hi' This side Pawan!!</h1>
+    </div>
+  </body>
+</html>
